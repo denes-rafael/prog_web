@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7fc;
+}
+
+header {
+  background: #3b5998;
+  color: #fff;
+  padding: 1.2em;
+  text-align: center;
+  letter-spacing: 2px;
+  /* margin-left: 0px; */
+}
+
+nav {
+  background: #2d3954;
+  min-height: 100vh;
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding-top: 40px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+nav a.active,
+nav a:hover {
+  background: #4d5a7a;
+}
+
+main {
+  margin-left: 240px;
+  padding: 2em 3vw 3em 3vw;
+  min-height: 80vh;
+}
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+.img-responsiva {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2em left;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px #0002;
+  margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4em;
+  color: #2d3954;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: 1px solid #c3c3da;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button {
+  background: #3b5998;
+  color: #fff;
+  border: none;
+  padding: 0.8em 2em;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #2d3954;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  margin: 2em 0 0 240px;
+  font-size: 0.95em;
+}
+
+#portfolio > ul > li > ul {
+  margin-top: 15px;
+  list-style-type: none;
+}
+
+#formacao > ul > li {
+  margin-bottom: 15px;
+}
+
+#msgContato {
+  margin-top: 15px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav {
+    position: static;
+    width: 100vw;
+    min-height: 0;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5em 0;
+  }
+  main,
+  footer,
+  header {
+    margin-left: 0;
+    padding: 1em;
+  }
+}

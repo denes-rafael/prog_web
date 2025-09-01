@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfólio Pessoal - Dênes Rafael</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Portfólio de <b>Dênes Donato</b></header>
+
+    <nav>
+      <a href="#" data-section="sobre" class="active">Sobre mim</a>
+      <a href="#" data-section="formacao">Formação</a>
+      <a href="#" data-section="portfolio">Portfólio</a>
+      <a href="#" data-section="contato">Contato</a>
+    </nav>
+
+    <main>
+      <!-- Sobre mim -->
+      <section id="sobre" class="active">
+        <h1>Sobre mim</h1>
+        <br />
+        <p>
+          Olá! Meu nome é <b>Dênes Rafael Fernandes Donato</b>. Tenho paixão por tecnologia,
+          principalmente por programação backend e desafios criativos.<br />
+          Meus hobbies incluem tocar violão, leitura de artigos, livros sobre religiões,
+          curiosidades etc.<br />
+          Sempre busco aprender algo novo e transformar problemas em soluções digitais. <br />
+        </p>
+      </section>
+
+      <!-- Formação -->
+      <section id="formacao">
+        <h1>Formação & Idiomas</h1>
+        <br />
+        <ul>
+          <li>
+            <b>Curso Superior:</b>
+            <ul>
+              <li>Análise e Desenvolvimento de Sistemas (em andamento)</li>
+              <li>Bacharelado em Administração de Empresas - concluído</li>
+            </ul>
+          </li>
+          <li>
+            <b>Pós graduação:</b>
+            <ul>
+              <li>MBA Arquitetura e Engenharia de software - concluído</li>
+            </ul>
+          </li>
+          <li>
+            <b>Cursos livres:</b>
+            <ul>
+              <li>UX/UI Design</li>
+              <li>JavaScript</li>
+              <li>SQLServer</li>
+            </ul>
+          </li>
+          <li>
+            <b>Idiomas:</b>
+            <ul>
+              <li>Português (nativo)</li>
+              <li>Inglês (intermediário)</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Portfólio -->
+      <section id="portfolio">
+        <h1>Portfólio</h1>
+        <br />
+        <ul>
+          <li>
+            <b>Sistema de Agendamento Online</b>
+            <ul>
+              <li>Google Apps Script</li>
+              <li>Google Sheets</li>
+              <li><br /><img src="img/sesmt.PNG" alt="SESMT" class="img-responsiva" /></li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Sistema de Gestão Educacional </b>
+            <ul>
+              <li>
+                Disponível em:
+                <a href="https://educacao.saocaetanodosul.sp.gov.br" target="_blank">E.ducação</a>
+              </li>
+              <li>PHP 7</li>
+              <li>SQLServer</li>
+              <li><br /><img src="img/educacao.PNG" alt="E.ducacao" class="img-responsiva" /></li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          <em
+            >Veja meu <b>GitHub</b>:
+            <a href="https://github.com/denes-rafael?tab=repositories" target="_blank"
+              >Repositório</a
+            ></em
+          >
+        </p>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato">
+        <h1>Contato</h1>
+        <form id="formContato" autocomplete="off" onsubmit="enviarFormulario(event)">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+        <p id="msgContato"></p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2025 Dênes Rafael &middot;
+      <a href="mailto:4565227@alunouninter.com">4565227@alunouninter.com</a> &middot; Atividade
+      Prática - Fundamentos da Programação Web
+    </footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
